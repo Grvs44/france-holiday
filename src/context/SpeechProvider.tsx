@@ -30,10 +30,11 @@ export const useSpeech = () => useContext(Context)
 
 const SpeechProvider: FC<{ children: ReactNode }> = (props) => {
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>(getVoices)
+  const [voicesRetry, setVoicesRetry] = useState<boolean>(false)
   const [voice, setVoice] = useState<string | undefined>(undefined)
 
   useEffect(() => {
-    const listener = () => setVoices(window.speechSynthesis.getVoices())
+    const listener = () => setVoices(getVoices)
     window.speechSynthesis.addEventListener('voiceschanged', listener)
     return () =>
       window.speechSynthesis.removeEventListener('voiceschanged', listener)
@@ -41,10 +42,21 @@ const SpeechProvider: FC<{ children: ReactNode }> = (props) => {
 
   useEffect(() => {
     const voice = voices.at(0)
-    if (voice?.lang.startsWith('fr-')) setVoice(voice.voiceURI)
-    else
-      alert(`Text-to-speech warning: no French voices found
-Please install the French speech pack for your OS`)
+    if (!voice) {
+      if (!voicesRetry) {
+        // if voices aren't loaded, retry once (to make sure doesn't retry repeatedly)
+        setVoices(() => {
+          setVoicesRetry(true)
+          return getVoices()
+        })
+      }
+      return
+    }
+    setVoice(voice.voiceURI)
+    if (!voice.lang.startsWith('fr-'))
+      alert(
+        'No French text-to-speech voices found. Please check you have the French speech pack installed on your OS',
+      )
   }, [voices])
 
   const value: SpeechContext = {
