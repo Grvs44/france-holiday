@@ -13,8 +13,8 @@ export default defineConfig({
       manifest: {
         name: 'France Holiday',
         short_name: 'Holiday',
-        background_color: '#c9ffc9',
-        theme_color: '#c9ffc9',
+        background_color: '#002153',
+        theme_color: '#cf0821',
       },
       registerType: 'autoUpdate',
       includeAssets: ['*.csv'],
