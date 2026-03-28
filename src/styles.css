@@ -1,0 +1,14 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.phrase {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.phrase span {
+  flex-grow: 10;
+}
