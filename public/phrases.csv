@@ -8,6 +8,7 @@ Thank you,Merci
 Thank you very much!,Merci beaucoup !
 You're welcome,De rien
 I am sorry,Je suis désolé
+Pardon?,Pardon ?
 Good morning,Bonjour
 Good evening,Bonsoir
 Good night,Bonne nuit
@@ -15,6 +16,17 @@ What's your name?,Comment vous appelez-vous ?
 My name is…,Je m'appelle…
 How are you?,Comment allez-vous ?
 "I'm fine, thanks!","Je vais bien, merci !"
+NUMBERS,
+One,Un
+Two,deux
+Three,trois
+Four,quatre
+Five,cinq
+Six,six
+Seven,sept
+Eight,huit
+Nine,neuf
+Ten,dix
 TRAVELLING,
 Turn left,Tournez à gauche
 Turn right,Tournez à doite
@@ -26,6 +38,9 @@ Do you have a city map?,Avez-vous une carte de la ville ?
 Please stop here,Merci de vous arrêter ici
 Where can I find the taxis?,Où puis-je trouver les taxis ?
 How can I get a taxi?,Comment puis-je obtenir un taxi ?
+Where is the toilet?,Où sont les toilettes ?
+Where is the women's toilet?,Où sont les toilettes des femmes?
+Where is the men's toilet?,Où sont les toilettes des hommes?
 GOING OUT FOR DINNER,
 Do you have vegetarian dishes?,Avez-vous des plats végétariens ?
 Main dish,Plat principal
@@ -52,5 +67,12 @@ Can you write that down?,Est-ce que vous pourriez l'écrire ?
 Call an ambulance!,Appelez une ambulance !
 I am in danger!,Je suis en danger !
 I don't understand!,Je ne comprends pas !
+I don't know!,Je ne sais pas!
 Can you help me?,Pouvez-vous m'aider ?
 Fire!,Au feu !
+OCCASIONS,
+Have a good trip!,Bon voyage
+Have fun!,Amusez-vous bien ! 
+Congratulations!,Félicitations !
+Welcome!,Bienvenue !
+Happy birthday!,Joyeux anniversaire !

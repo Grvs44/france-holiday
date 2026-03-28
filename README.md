@@ -16,4 +16,6 @@ Requirements: Node.js and npm
 ## Sources
 
 - Speech synthesis code adapted from [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API#speech_synthesis)
-- Phrases from [Linguanaut](http://www.linguanaut.com/english_french.htm)
+- Phrases:
+  - [Linguanaut](http://www.linguanaut.com/english_french.htm)
+  - https://storylearning.com/learn/french/french-tips/common-french-phrases
