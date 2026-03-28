@@ -18,3 +18,7 @@ body {
 .phrase span {
   margin: 0 1em;
 }
+
+.phrase span[lang|='fr'] {
+  font-style: italic;
+}
