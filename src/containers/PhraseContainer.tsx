@@ -11,6 +11,7 @@ const PhraseContainer: FC = () => {
   return (
     <div>
       <h2>Phrases</h2>
+      <p>Click a phrase below to listen to the French pronounciation</p>
       <div>
         <VoiceSelect
           value={speech.voice}
