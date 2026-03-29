@@ -1,4 +1,4 @@
-﻿BASICS,
+﻿#Basics,
 Yes,Oui
 No,Non
 Hello,Salut
@@ -16,7 +16,7 @@ What's your name?,Comment vous appelez-vous ?
 My name is…,Je m'appelle…
 How are you?,Comment allez-vous ?
 "I'm fine, thanks!","Je vais bien, merci !"
-NUMBERS,
+#Numbers,
 One,Un
 Two,deux
 Three,trois
@@ -27,7 +27,7 @@ Seven,sept
 Eight,huit
 Nine,neuf
 Ten,dix
-TRAVELLING,
+#Travelling,
 Turn left,Tournez à gauche
 Turn right,Tournez à doite
 Where is the exit?,Où est la sortie ?
@@ -54,7 +54,7 @@ Where is a good restaurant?,Où puis-je trouver un bon restaurant ?
 A glass of water please,Un verre d'eau s'il vous plaît
 A table for two please!,Une table pour deux s'il vous plait !
 "Can I get a menu, please?","Puis-je avoir un menu, s'il vous plaît ?"
-GETTING HELP,
+#Getting help,
 Call the police!,Appelez la police !
 "Can you speak more slowly, please?",Pourriez-vous parler un peu moins vite ?
 "Can you repeat, please?",Pourriez-vous répéter ?
@@ -70,22 +70,22 @@ I don't understand!,Je ne comprends pas !
 I don't know!,Je ne sais pas!
 Can you help me?,Pouvez-vous m'aider ?
 Fire!,Au feu !
-OCCASIONS,
+#Occasions,
 Have a good trip!,Bon voyage
 Have fun!,Amusez-vous bien ! 
 Congratulations!,Félicitations !
 Welcome!,Bienvenue !
 Happy birthday!,Joyeux anniversaire !
-PLACES,
+#Places,
 Île-de-France Mobility,Île-de-France Mobilités
 ,Paris
 ,Pantin
-FOOD,
+#Food,
 ,Croissant
 ,Baguette
 Bakery for pastries and sweets,Pâtisserie
 Bakery,boulangerie
-FORMULA 1,
+#Formula 1,
 ,Pierre Gasly
 ,Esteban Ocon
 ,Isaack Hadjar

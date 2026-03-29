@@ -5,7 +5,7 @@ import { usePhrases } from '../context/PhraseProvider'
 import { useSpeech } from '../context/SpeechProvider'
 
 const PhraseContainer: FC = () => {
-  const phrases = usePhrases()
+  const phraseGroups = usePhrases()
   const speech = useSpeech()
 
   return (
@@ -19,12 +19,17 @@ const PhraseContainer: FC = () => {
           setVoice={speech.setVoice}
         />
       </div>
-      {phrases.length ? (
-        <ul>
-          {phrases.map((phrase, key) => (
-            <Phrase key={key} phrase={phrase} read={speech.read} />
-          ))}
-        </ul>
+      {phraseGroups.length ? (
+        phraseGroups.map((group, key) => (
+          <div key={key}>
+            <h3>{group.title}</h3>
+            <ul>
+              {group.phrases.map((phrase, key) => (
+                <Phrase key={key} phrase={phrase} read={speech.read} />
+              ))}
+            </ul>
+          </div>
+        ))
       ) : (
         <p>Loading phrases...</p>
       )}
