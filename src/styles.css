@@ -6,6 +6,11 @@ body {
   font-family: 'Segoe UI', Arial, sans-serif;
 }
 
+.phraselist h3{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .phrase {
   cursor: pointer;
   display: flex;
