@@ -16,7 +16,6 @@ export default defineConfig({
         background_color: '#002153',
         theme_color: '#cf0821',
       },
-      registerType: 'autoUpdate',
       includeAssets: ['*.csv'],
       workbox: {
         navigateFallbackDenylist: [/^.*.txt/],
