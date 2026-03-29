@@ -4,9 +4,10 @@
 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0 1em;
 }
 
-.phraselist h3{
+.phraselist h3 {
   cursor: pointer;
   text-decoration: underline;
 }
