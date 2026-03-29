@@ -12,12 +12,16 @@ export type SpeechContext = {
   voice?: string
   setVoice: (voiceURI: string) => void
   read: (text: string) => void
+  rate: number
+  setRate: (rate: number) => void
 }
 
 const Context = createContext<SpeechContext>({
   voices: [],
   setVoice: () => {},
   read: () => {},
+  rate: 1,
+  setRate: () => {},
 })
 
 const getVoices = () => {
@@ -32,6 +36,7 @@ const SpeechProvider: FC<{ children: ReactNode }> = (props) => {
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>(getVoices)
   const [voicesRetry, setVoicesRetry] = useState<boolean>(false)
   const [voice, setVoice] = useState<string | undefined>(undefined)
+  const [rate, setRate] = useState<number>(1)
 
   useEffect(() => {
     const listener = () => setVoices(getVoices)
@@ -66,9 +71,12 @@ const SpeechProvider: FC<{ children: ReactNode }> = (props) => {
     read(text) {
       const utter = new SpeechSynthesisUtterance(text)
       utter.lang = 'fr-FR'
+      utter.rate = rate
       utter.voice = voices.find((v) => v.voiceURI == voice) || null
       window.speechSynthesis.speak(utter)
     },
+    rate,
+    setRate,
   }
 
   return <Context.Provider value={value} {...props} />

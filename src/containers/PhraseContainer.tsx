@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import PhraseList from '../components/PhraseList'
+import RateSelect from '../components/RateSelect'
 import VoiceSelect from '../components/VoiceSelect'
 import { usePhrases } from '../context/PhraseProvider'
 import { useSpeech } from '../context/SpeechProvider'
@@ -21,6 +22,7 @@ const PhraseContainer: FC = () => {
           voices={speech.voices}
           setVoice={speech.setVoice}
         />
+        <RateSelect rate={speech.rate} setRate={speech.setRate} />
       </div>
       {phraseGroups.length ? (
         phraseGroups.map((group, key) => (
