@@ -18,6 +18,8 @@ export default defineConfig({
       },
       includeAssets: ['*.csv'],
       workbox: {
+        clientsClaim: true,
+        skipWaiting: true,
         navigateFallbackDenylist: [/^.*.txt/],
       },
     }),
